@@ -202,7 +202,7 @@ function Get-MSCloudIdConsentGrantList {
     }
 }
 
-Load-Module "AzureAD"
+Load-Module "AzureADPreview"
 $global:hasData = $false
 Get-MSCloudIdConsentGrantList
 if($global:hasData -eq $false){
